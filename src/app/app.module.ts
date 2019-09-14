@@ -12,6 +12,7 @@ import { Model1Component } from './home/shared/model1/model1.component';
 import { TestomonialComponent } from './home/shared/testomonial/testomonial.component';
 import { CounterComponent } from './home/shared/counter/counter.component';
 import { GallaryComponent } from './home/shared/gallary/gallary.component';
+import { SecurityComponent } from './security/security.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GallaryComponent } from './home/shared/gallary/gallary.component';
     Model1Component,
     TestomonialComponent,
     CounterComponent,
-    GallaryComponent
+    GallaryComponent,
+    SecurityComponent
   ],
   imports: [
     BrowserModule,
