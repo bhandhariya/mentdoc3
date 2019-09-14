@@ -13,6 +13,7 @@ import { TestomonialComponent } from './home/shared/testomonial/testomonial.comp
 import { CounterComponent } from './home/shared/counter/counter.component';
 import { GallaryComponent } from './home/shared/gallary/gallary.component';
 import { SecurityComponent } from './security/security.component';
+import { SHeaderComponent } from './security/shared/s-header/s-header.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SecurityComponent } from './security/security.component';
     TestomonialComponent,
     CounterComponent,
     GallaryComponent,
-    SecurityComponent
+    SecurityComponent,
+    SHeaderComponent
   ],
   imports: [
     BrowserModule,
