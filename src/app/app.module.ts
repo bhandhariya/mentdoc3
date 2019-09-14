@@ -11,6 +11,7 @@ import { WhychooseusComponent } from './home/shared/whychooseus/whychooseus.comp
 import { Model1Component } from './home/shared/model1/model1.component';
 import { TestomonialComponent } from './home/shared/testomonial/testomonial.component';
 import { CounterComponent } from './home/shared/counter/counter.component';
+import { GallaryComponent } from './home/shared/gallary/gallary.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CounterComponent } from './home/shared/counter/counter.component';
     WhychooseusComponent,
     Model1Component,
     TestomonialComponent,
-    CounterComponent
+    CounterComponent,
+    GallaryComponent
   ],
   imports: [
     BrowserModule,
