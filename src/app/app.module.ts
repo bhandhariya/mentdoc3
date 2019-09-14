@@ -10,6 +10,7 @@ import { Feature1Component } from './home/shared/feature1/feature1.component';
 import { WhychooseusComponent } from './home/shared/whychooseus/whychooseus.component';
 import { Model1Component } from './home/shared/model1/model1.component';
 import { TestomonialComponent } from './home/shared/testomonial/testomonial.component';
+import { CounterComponent } from './home/shared/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TestomonialComponent } from './home/shared/testomonial/testomonial.comp
     Feature1Component,
     WhychooseusComponent,
     Model1Component,
-    TestomonialComponent
+    TestomonialComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
