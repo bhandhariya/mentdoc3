@@ -1,0 +1,27 @@
+section{
+    z-index: 1000;
+}
+#header{
+    background-image: url('../../../../assets/image/header/Mentdoc.png');
+    height: 99vh;
+    background-size:cover;
+    background-position: center; 
+    
+}
+.navbar nav li a{
+    float:right;
+    color:#fff!important;
+}
+.navbar-brand img{
+    width:150px;
+    margin-left: 30px;
+
+}
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+}
+nav .fa-bars{
+    color: #fff !important;
+    font-size: 26px;
+}
