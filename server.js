@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-
+var cors=require('cors');
 const app = express();
 var CorousalRouter=require('./routes/courousal_router');
 // Serve only the static files form the dist directory
@@ -12,5 +12,6 @@ res.sendFile(path.join(__dirname+'/dist/mentdoc3/index.html'));
 });
 
 app.use('/cor',CorousalRouter)
+app.use(cors());
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
