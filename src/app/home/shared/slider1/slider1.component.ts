@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient } from "@angular/common/http";
 @Component({
   selector: 'app-slider1',
   templateUrl: './slider1.component.html',
   styleUrls: ['./slider1.component.css']
 })
 export class Slider1Component implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+images;
+  constructor(config: NgbCarouselConfig,private http:HttpClient) { 
+    config.interval = 10000;
+    config.wrap = false;
+    config.keyboard = false;
+    config.pauseOnHover = false;
   }
 
+  ngOnInit() {
+    this.getSliders();
+  }
+
+
+  getSliders(){
+    this.http.get('http://localhost:8080/api/many').subscribe(this.cb)
+  }
+  cb=(r)=>{
+    this.images=r;
+    console.log(this.images)
+  }
 }
