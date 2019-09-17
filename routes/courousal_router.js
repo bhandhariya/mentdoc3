@@ -5,7 +5,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/many', function(req,res){
-    console.log('working')
+    var data=[
+        {name:"https://picsum.photos/900/500?random&t=0.8257184852337527"},
+        {name:"https://picsum.photos/900/500?random&t=0.8575731283508712"},
+        {name:"https://picsum.photos/900/500?random&t=0.2628932351496769"},
+        {name:"https://picsum.photos/900/500?random&t=0.8804361194509023"}
+
+    ];
+    res.send(data);
 });
 
 
