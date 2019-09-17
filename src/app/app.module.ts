@@ -21,6 +21,10 @@ import { SFooterComponent } from './security/shared/s-footer/s-footer.component'
 import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { CourousalComponent } from './shared/courousal/courousal.component';
+
+
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -42,11 +46,12 @@ import { ContactComponent } from './contact/contact.component';
     SFooterComponent,
     ServicesComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    CourousalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
