@@ -18,6 +18,7 @@ import { SBannerComponent } from './security/shared/s-banner/s-banner.component'
 import { SDataMixComponent } from './security/shared/s-data-mix/s-data-mix.component';
 import { SDataSecureComponent } from './security/shared/s-data-secure/s-data-secure.component';
 import { SFooterComponent } from './security/shared/s-footer/s-footer.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SFooterComponent } from './security/shared/s-footer/s-footer.component'
     SBannerComponent,
     SDataMixComponent,
     SDataSecureComponent,
-    SFooterComponent
+    SFooterComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
