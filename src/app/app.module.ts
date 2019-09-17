@@ -14,6 +14,7 @@ import { CounterComponent } from './home/shared/counter/counter.component';
 import { GallaryComponent } from './home/shared/gallary/gallary.component';
 import { SecurityComponent } from './security/security.component';
 import { SHeaderComponent } from './security/shared/s-header/s-header.component';
+import { SBannerComponent } from './security/shared/s-banner/s-banner.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SHeaderComponent } from './security/shared/s-header/s-header.component'
     CounterComponent,
     GallaryComponent,
     SecurityComponent,
-    SHeaderComponent
+    SHeaderComponent,
+    SBannerComponent
   ],
   imports: [
     BrowserModule,
