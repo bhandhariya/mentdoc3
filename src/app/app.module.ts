@@ -25,6 +25,8 @@ import { CourousalComponent } from './shared/courousal/courousal.component';
 
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -51,7 +53,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,NgbModule
+    AppRoutingModule,NgbModule,FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
