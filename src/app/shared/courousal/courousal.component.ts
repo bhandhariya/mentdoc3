@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient } from "@angular/common/http";
 @Component({
   selector: 'app-courousal',
   templateUrl: './courousal.component.html',
@@ -8,7 +9,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CourousalComponent implements OnInit {
   images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
-  constructor(config: NgbCarouselConfig) { 
+  constructor(config: NgbCarouselConfig,private http:HttpClient) { 
     config.interval = 10000;
     config.wrap = false;
     config.keyboard = false;
@@ -16,7 +17,10 @@ export class CourousalComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.images)
+    console.log(this.images);
+    this.http.get('http://localhost:8080/cor/many').subscribe(r=>{
+      console.log(r)
+    })
   }
 
 }
