@@ -31,3 +31,17 @@
       display: flex;
     }
   }
+
+  @media only screen and (max-width: 420px) {
+    .mob{
+      margin-left: 30%;
+    }
+    li span{
+      font-size: 15px;
+      text-align: center;
+      
+    }
+    .banner_item img{
+      margin-left: 30%
+    }
+  }
