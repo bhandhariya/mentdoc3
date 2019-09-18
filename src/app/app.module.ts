@@ -27,6 +27,7 @@ import { CourousalComponent } from './shared/courousal/courousal.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { HttpClientModule } from "@angular/common/http";
     ServicesComponent,
     BlogComponent,
     ContactComponent,
-    CourousalComponent
+    CourousalComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
