@@ -23,3 +23,13 @@
     margin-top: 200px;
     margin-left: -50px;
 }
+
+@media only screen and (max-width: 420px) {
+    img{
+        margin-left: -100px;
+        width: 100%;
+    }
+    .our_ability_member_text p{
+        margin-left: 50px;
+    }
+  }
