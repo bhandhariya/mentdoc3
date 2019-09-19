@@ -21,7 +21,7 @@ images;
 
 
   getSliders(){
-    this.http.get('http://localhost:8080/api/many').subscribe(this.cb)
+    this.http.get('http://localhost:8080/api/getbanner').subscribe(this.cb)
   }
   cb=(r)=>{
     this.images=r;
