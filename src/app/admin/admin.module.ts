@@ -8,6 +8,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { SecurityComponent } from './security/security.component';
 import { BannerComponent } from './banner/banner.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   
@@ -33,7 +35,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(appRoutes)
+    RouterModule.forChild(appRoutes),FormsModule,ReactiveFormsModule,HttpClientModule
   ]
 })
 export class AdminModule { }

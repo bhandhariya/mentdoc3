@@ -18,7 +18,8 @@ router.get('/many', function(req,res){
 
 router.post('/upload',Banner.upload)
 
+router.get('/getbanner',Banner.getAllBanners);
 
-
+router.post('/deleteBanerByid',Banner.deletebyid)
 
 module.exports = router;
