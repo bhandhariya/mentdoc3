@@ -25,9 +25,13 @@ import { CourousalComponent } from './shared/courousal/courousal.component';
 
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { AdminComponent } from './admin/admin.component';
+
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireStorageModule } from "@angular/fire/storage";
+import { environment } from 'src/environments/environment.prod';
 
 @NgModule({
   declarations: [
@@ -55,7 +59,8 @@ import { AdminComponent } from './admin/admin.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,NgbModule,FormsModule,HttpClientModule
+    AppRoutingModule,NgbModule,FormsModule,HttpClientModule,ReactiveFormsModule,  
+    AngularFireModule.initializeApp(environment.firebase),AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
