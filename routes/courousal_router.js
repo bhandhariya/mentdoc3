@@ -1,6 +1,7 @@
   
 var express = require('express');
 var router = express.Router();
+var Banner=require('../controller/banner_controller')
 
 
 /* GET home page. */
@@ -14,6 +15,8 @@ router.get('/many', function(req,res){
     ];
     res.send(data);
 });
+
+router.post('/upload',Banner.upload)
 
 
 

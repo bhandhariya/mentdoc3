@@ -13,7 +13,7 @@ var cors=require('cors')
 
 var app = express();
 
-
+var db=require('./bin/db')
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

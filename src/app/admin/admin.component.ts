@@ -3,6 +3,7 @@ import * as $ from "jquery";
 import { FormGroup, FormControl } from '@angular/forms';
 import { AngularFireStorage } from "@angular/fire/storage";
 import { finalize } from 'rxjs/operators';
+import { HttpClient } from "@angular/common/http";
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -10,7 +11,7 @@ import { finalize } from 'rxjs/operators';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private storage:AngularFireStorage) { }
+  constructor(private storage:AngularFireStorage,private http:HttpClient) { }
 
   ngOnInit() {
     $("#menu-toggle").click(function(e) {
@@ -61,7 +62,11 @@ export class AdminComponent implements OnInit {
     photoUrl:new FormControl('')
   })
   bannerFormSubmit(r){
-    console.log(r)
+    console.log(r);
+    this.http.post('http://localhost:8080/api/upload',r).subscribe(this.uploadSB)
+  }
+  uploadSB=(dt)=>{
+    console.log(dt)
   }
   bannerUpload(event){
     console.log(event.target.files[0]);
