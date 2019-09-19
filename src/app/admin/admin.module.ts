@@ -7,11 +7,13 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { SecurityComponent } from './security/security.component';
+import { BannerComponent } from './banner/banner.component';
 
 const appRoutes: Routes = [
   
   { path : '', component: AdmindashboardComponent,children : [
       { path: 'blog', component: BlogComponent },
+      { path: 'banner', component: BannerComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'home', component: HomeComponent },
       { path: 'security', component: SecurityComponent },
@@ -27,7 +29,7 @@ const appRoutes: Routes = [
     BlogComponent, 
     ContactComponent, 
     HomeComponent, 
-    SecurityComponent, 
+    SecurityComponent, BannerComponent, 
   ],
   imports: [
     CommonModule,
