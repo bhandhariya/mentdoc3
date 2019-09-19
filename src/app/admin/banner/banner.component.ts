@@ -27,7 +27,7 @@ export class BannerComponent implements OnInit {
   })
   bannerFormSubmit(r){
     console.log(r);
-    this.http.post('http://localhost:8080/api/upload',r).subscribe(this.uploadSB)
+    this.http.post('/api/banner/upload',r).subscribe(this.uploadSB)
   }
   uploadSB=(dt)=>{
     console.log(dt)
@@ -62,7 +62,7 @@ export class BannerComponent implements OnInit {
 
   }
   getAllBanners(){
-    this.http.get('http://localhost:8080/api/getbanner').subscribe(this.getAllCB)
+    this.http.get('/api/banner/getbanner').subscribe(this.getAllCB)
   }
   banners;
   getAllCB=(dt)=>{
@@ -74,7 +74,7 @@ export class BannerComponent implements OnInit {
     var obj={
       id:id
     }
-    this.http.post('http://localhost:8080/api/deleteBanerByid',obj).subscribe(r=>{
+    this.http.post('/api/banner/deleteBanerByid',obj).subscribe(r=>{
     console.log(r);
     this.getAllBanners();
     })
