@@ -10,6 +10,9 @@ export class TestomonialComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    });
   }
 
 }

@@ -26,11 +26,13 @@ margin: 20px auto 5px;
 margin-top:30px;
 }
 .col-md-4{
-margin :40px auto; 
+margin :80px auto; 
 }
 .profile{
 padding:70px 10px 10px;
 background-color:#efefef;
+width: 400px;
+margin-left: -80px;
 }
 .profile img{
 
