@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 // var db=require('./db')
 var CorousalRouter = require('./routes/courousal_router');
+var testimonialRouter=require('./routes/testimonial_router')
 
 
 
@@ -31,6 +32,7 @@ app.use(function(req,res,next){
 
 
 app.use('/api/banner', CorousalRouter);
+app.use('/api/testimonial', testimonialRouter);
 
 
 

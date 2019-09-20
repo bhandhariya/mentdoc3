@@ -1,6 +1,6 @@
   
 var mongoose = require('mongoose');
-var mongoURI = "mongodb://raja:raja1234@ds119018.mlab.com:19018/aadish";
+var mongoURI = "mongodb://raja:raja1234@ds229186.mlab.com:29186/mentcomwebsite1";
 
 
 mongoose.Promise = global.Promise;

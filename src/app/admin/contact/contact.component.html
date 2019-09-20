@@ -1,1 +1,16 @@
-<p>contact works!</p>
+<div class="container">
+        <div class="card" [formGroup]="testForm" >
+          <div class="card-header">
+            Add new Testimonial 
+          </div>
+
+          <div class="card-body">
+            <input type="text" formControlName="name" placeholder="entar the Name" class="form-control">
+            <input type="text" formControlName="title" placeholder="entar the Title" class="form-control">
+            <textarea formControlName="text" placeholder="entar the Text" class="form-control" cols="30" rows="10"></textarea>
+            <h5 class="card-title">Select a file for upload:</h5>
+            <input type="file" (change)="uploadPhoto($event)" class="form-control" accept=".png,.jpg" />
+            <button (click)="testFormSubmit(testForm.value)" class="btn btn-primary" >Add Banner</button>
+          </div>
+        </div>
+      </div>
