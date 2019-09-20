@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-testomonial',
@@ -7,12 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestomonialComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel();
-    });
+    // $(document).ready(function(){
+    //   $(".owl-carousel").owlCarousel();
+    // });
+    this.getAllTestimonials();
   }
-
+  getAllTestimonials(){
+    this.http.get('/api/testimonial/getall').subscribe(this.getallCB)
+  }
+  Testimonials
+  getallCB=(dt)=>{
+    this.Testimonials=dt;
+    console.log(this.Testimonials)
+  }
 }

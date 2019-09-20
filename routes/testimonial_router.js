@@ -6,8 +6,8 @@ var Testimonial=require('../controller/testimonial_controller')
 
 router.post('/upload',Testimonial.upload)
 
-// router.get('/getbanner',Banner.getAllBanners);
+ router.get('/getall',Testimonial.getAllBanners);
 
-// router.post('/deleteBanerByid',Banner.deletebyid)
+ router.post('/deletebyid',Testimonial.deletebyid)
 
 module.exports = router;

@@ -14,3 +14,30 @@
           </div>
         </div>
       </div>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>title</th>
+        <th>text</th>
+        <th>image</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of Testimonials" >
+        <td scope="row">{{i.name}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.text}}</td>
+        <td>
+          <img src="{{i.image}}" height="50px" alt="">
+        </td>
+        <td>
+          <button (click)="deletebyID(i._id)" >delete</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
