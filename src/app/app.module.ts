@@ -32,6 +32,8 @@ import { AdminComponent } from './admin/admin.component';
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireStorageModule } from "@angular/fire/storage";
 import { environment } from 'src/environments/environment.prod';
+import { TestingComponent } from './testing/testing.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
@@ -55,12 +57,13 @@ import { environment } from 'src/environments/environment.prod';
     BlogComponent,
     ContactComponent,
     CourousalComponent,
-    AdminComponent
+    AdminComponent,
+    TestingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,NgbModule,FormsModule,HttpClientModule,ReactiveFormsModule,  
-    AngularFireModule.initializeApp(environment.firebase),AngularFireStorageModule
+    AngularFireModule.initializeApp(environment.firebase),AngularFireStorageModule,CKEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
