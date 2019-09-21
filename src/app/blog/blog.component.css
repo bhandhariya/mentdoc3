@@ -1,0 +1,15 @@
+#cardHeader{
+    background: blue;
+    height: 80px;
+    padding: 10px;
+}
+#cardHeader h1{
+    margin-left: 100px;
+}
+
+#blog{
+
+}
+.card:hover{
+    
+}
