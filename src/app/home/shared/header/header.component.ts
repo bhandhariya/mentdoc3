@@ -11,6 +11,18 @@ export class HeaderComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit() {
+    window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
   }
   openLeftMenu() {
     document.getElementById("leftMenu").style.display = "block";
