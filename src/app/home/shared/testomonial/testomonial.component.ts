@@ -14,7 +14,7 @@ export class TestomonialComponent implements OnInit {
     // $(document).ready(function(){
     //   $(".owl-carousel").owlCarousel();
     // });
-    this.getAllTestimonials();
+    // this.getAllTestimonials();
   }
   getAllTestimonials(){
     this.http.get('/api/testimonial/getall').subscribe(this.getallCB)
