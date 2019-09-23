@@ -35,6 +35,7 @@ import { environment } from 'src/environments/environment.prod';
 import { TestingComponent } from './testing/testing.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { OwlModule } from 'ngx-owl-carousel';
+import { FaqComponent } from './security/shared/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     ContactComponent,
     CourousalComponent,
     AdminComponent,
-    TestingComponent
+    TestingComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
