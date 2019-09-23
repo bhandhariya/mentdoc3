@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SBannerComponent } from './s-banner.component';
+import { MixingComponent } from './mixing.component';
 
-describe('SBannerComponent', () => {
-  let component: SBannerComponent;
-  let fixture: ComponentFixture<SBannerComponent>;
+describe('MixingComponent', () => {
+  let component: MixingComponent;
+  let fixture: ComponentFixture<MixingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SBannerComponent ]
+      declarations: [ MixingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SBannerComponent);
+    fixture = TestBed.createComponent(MixingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

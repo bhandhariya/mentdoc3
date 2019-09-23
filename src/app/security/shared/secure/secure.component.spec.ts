@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SDataSecureComponent } from './s-data-secure.component';
+import { SecureComponent } from './secure.component';
 
-describe('SDataSecureComponent', () => {
-  let component: SDataSecureComponent;
-  let fixture: ComponentFixture<SDataSecureComponent>;
+describe('SecureComponent', () => {
+  let component: SecureComponent;
+  let fixture: ComponentFixture<SecureComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SDataSecureComponent ]
+      declarations: [ SecureComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SDataSecureComponent);
+    fixture = TestBed.createComponent(SecureComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

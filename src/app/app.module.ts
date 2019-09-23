@@ -13,12 +13,10 @@ import { TestomonialComponent } from './home/shared/testomonial/testomonial.comp
 import { CounterComponent } from './home/shared/counter/counter.component';
 import { GallaryComponent } from './home/shared/gallary/gallary.component';
 import { SecurityComponent } from './security/security.component';
-import { SHeaderComponent } from './security/shared/s-header/s-header.component';
-import { SBannerComponent } from './security/shared/s-banner/s-banner.component';
-import { SDataMixComponent } from './security/shared/s-data-mix/s-data-mix.component';
-import { SDataSecureComponent } from './security/shared/s-data-secure/s-data-secure.component';
-import { SFooterComponent } from './security/shared/s-footer/s-footer.component';
-
+import { BannerComponent} from './security/shared/banner/banner.component';
+import { SecureComponent} from './security/shared/secure/secure.component';
+import {MixingComponent} from './security/shared/mixing/mixing.component';
+import {FaqComponent} from './security/shared/faq/faq.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +30,11 @@ import { SFooterComponent } from './security/shared/s-footer/s-footer.component'
     CounterComponent,
     GallaryComponent,
     SecurityComponent,
-    SHeaderComponent,
-    SBannerComponent,
-    SDataMixComponent,
-    SDataSecureComponent,
-    SFooterComponent
+    FaqComponent,
+    MixingComponent,
+    SecureComponent,
+    BannerComponent
+    
   ],
   imports: [
     BrowserModule,
