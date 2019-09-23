@@ -129,7 +129,7 @@ background-color:#efefef;
 
 
 top:-60px;
-position:absolute;
+
 left:calc(50%   -   60px);
 border:10px solid white;
 
@@ -180,4 +180,7 @@ box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
 cursor:pointer;
 transition: 0.5s;
 
+}
+.item{
+    margin-left: 50px;
 }

@@ -1,10 +1,30 @@
+<section class="testimonial">
+        <div class="container">
+                <h1>Testimonials</h1>
 
-<div class="owl-carousel owl-theme">
-    <div *ngFor="let i of Testimonials">
-        <div class="item">
-            <h4>{{i.name}}</h4>
+                <div class="row">
+                    
+                        <div class="owl-carousel owl-theme">
+    
+                                <div *ngFor="let i of Testimonials">
+                            
+                                    <div class="item">
+                                           
+                                                    <div class="profile">
+                                                        <img src="{{i.image}}" class=user>
+                                                        <blockquote>
+                                                            MentDoc is an excellent platform for any psychiatrist as it has been designed carefully keeping the needs of the mental health professionals in mind. I can manage my appointments in a digital manner across different clinics of Tulasi Healthcare.
+                                                        </blockquote>
+                                                        <h3>Dr.Gorav Gupta</h3><span>Consultant Psychiatrist</span>
+                                                    </div>
+                                               
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                </div>
         </div>
-    </div>
-    
-    
-</div>
+</section>
+
+
