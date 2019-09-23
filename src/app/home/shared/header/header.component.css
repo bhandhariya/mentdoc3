@@ -17,3 +17,10 @@
   img{
       height: 80px;
   }
+  .homeImage{
+
+  }
+  .homeImage img{
+    height: 700px;
+    width: 100%;
+  }
