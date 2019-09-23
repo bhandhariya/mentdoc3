@@ -34,6 +34,7 @@ import { AngularFireStorageModule } from "@angular/fire/storage";
 import { environment } from 'src/environments/environment.prod';
 import { TestingComponent } from './testing/testing.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,NgbModule,FormsModule,HttpClientModule,ReactiveFormsModule,  
-    AngularFireModule.initializeApp(environment.firebase),AngularFireStorageModule,CKEditorModule
+    AngularFireModule.initializeApp(environment.firebase),AngularFireStorageModule,CKEditorModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
