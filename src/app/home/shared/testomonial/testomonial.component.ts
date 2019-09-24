@@ -15,35 +15,35 @@ export class TestomonialComponent implements OnInit {
 
     this.Testimonials= [
       {
-        "_id": "5d84a1a7a82e0e2eccb3e353",
-        "title": "Sr Psychatric",
-        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1568973121?alt=media&token=2b72e091-f62d-46e1-a652-38f6fbe10e93",
+        "_id": "5d89b8f52649ff26c8845825",
+        "title": "Consultant Psychiatrist",
+        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1569306790?alt=media&token=13a30bf5-80aa-4f64-a1cf-b2121b88b7ee",
         "name": "Gorav Gupta",
-        "text": "lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the ",
+        "text": "MentDoc is an excellent platform for any psychiatrist as it has been designed carefully keeping the needs of the mental health professionals in mind. I can manage my appointments in a digital manner across different clinics of Tulasi Healthcare.",
         "__v": 0
       },
       {
-        "_id": "5d84a2e6a82e0e2eccb3e355",
-        "title": "psychologist",
-        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1568973538?alt=media&token=6d715606-4ece-45be-96c3-0753b4fea73f",
-        "name": "radhi",
-        "text": "m ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem ispum de emit the lorem",
+        "_id": "5d89b9282649ff26c8845826",
+        "title": "Psychologist",
+        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1569306914?alt=media&token=768197bc-08d0-491a-a941-af5fe1527763",
+        "name": "Rashi Singh",
+        "text": "MentDoc is a well-designed platform sufficing the requirements of any Mental Health Professional. Not only does it help in proper management of my clinical operations, but it also eases the tedious process of record keeping and accessing.",
         "__v": 0
       },
       {
-        "_id": "5d885a4edb060a38805ab476",
-        "title": "kdjfhskdjfh",
-        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1569217090?alt=media&token=6a7c52e4-24d0-420f-8d83-8a9dae2bda9d",
-        "name": "aekrhwekjrhew1",
-        "text": "kdjfhskdjfhksjdfsd",
+        "_id": "5d89b95e2649ff26c8845827",
+        "title": "Psychiatrist",
+        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1569306941?alt=media&token=9974b844-7b98-4e53-9e0e-ac3c96199b3d",
+        "name": "Parvaiz A. Khan",
+        "text": "MentDoc as a platform has helped me greatly in management of my appointments , accessing reports, and retrieval of past case records. Keeping and maintaining physical records was a task which has now been made much simpler by MentDoc.",
         "__v": 0
       },
       {
-        "_id": "5d885a87db060a38805ab477",
-        "title": "kjhgkjgh",
-        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1569217150?alt=media&token=f11279c0-dfd2-4976-b8db-69c636f4dc4a",
-        "name": "kgjhg",
-        "text": "kjhkjhkjhkjh",
+        "_id": "5d89b9c92649ff26c884582a",
+        "title": "Psychologists",
+        "image": "https://firebasestorage.googleapis.com/v0/b/myapp-345d5.appspot.com/o/mentcom1569307031?alt=media&token=4cbefaae-29da-4063-a672-626396091eb5",
+        "name": "Naveen Kumar",
+        "text": "MentDoc is a highly efficient software specially designed for the mental health professionals. Not only are my appointments managed efficiently, but also I am able to reschedule my appointments and access reports of my clients.",
         "__v": 0
       }
     ]
