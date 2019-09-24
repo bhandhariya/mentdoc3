@@ -22,7 +22,7 @@ h3{
 	content:"\f105";
 	position:absolute;
 	left:-15px;
-	color:#76c04d;
+	color:white;
 }
 .header-part ul li{
 	line-height:2.0;
@@ -106,7 +106,7 @@ h3 span{
 	font-size:2rem;
 	text-align:center;
 	display:block;
-	color:#76c04d;
+	color:white;
 }
 .content h4{
 	font-size:1.2rem;
@@ -153,7 +153,7 @@ h3 span{
 	color:#fff;
 }
 .fixed-top.scrolled {
-    background-color: #76c04d !important;
+    background-color: white !important;
     transition: background-color 600ms linear;
 }
 .navbar-brand{
