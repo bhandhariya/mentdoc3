@@ -10,6 +10,7 @@ import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'security',component:SecurityComponent},
   {path:'services',component:ServicesComponent},
   {path:'blog',component:BlogComponent},
