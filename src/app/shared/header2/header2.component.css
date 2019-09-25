@@ -22,7 +22,7 @@ h3{
 	content:"\f105";
 	position:absolute;
 	left:-15px;
-	color:white;
+	color:#EAFCFC;
 }
 .header-part ul li{
 	line-height:2.0;
@@ -41,7 +41,7 @@ h3 span{
 	color:#fff;
 }
 .fixed-top.scrolled {
-    background-color: white !important;
+    background-color: #EAFCFC !important;
     transition: background-color 600ms linear;
 }
 .navbar-brand{
@@ -51,7 +51,7 @@ h3 span{
 	color:#fff !important;
 }
 .bg-dark{
-	background-color:#fff !important;
+	background-color:#EAFCFC !important;
 }
 .navbar-expand-lg .navbar-nav.side-nav{
 	flex-direction: column;
