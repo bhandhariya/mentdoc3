@@ -3,7 +3,7 @@
   <ngb-carousel *ngIf="images"  >
     <ng-template ngbSlide *ngFor="let item of images">
       <div class="picsum-img-wrapper" >
-        <img [src]="item.photoUrl" alt="Random first slide" style="height: 400px;width: 100%">
+        <img [src]="item.photoUrl" alt="Random first slide" >
       </div>
       <div class="carousel-caption">
         <h3>{{item.title}}</h3>
