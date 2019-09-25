@@ -38,6 +38,9 @@ import { OwlModule } from 'ngx-owl-carousel';
 import { FaqComponent } from './security/shared/faq/faq.component';
 import { Header2Component } from './shared/header2/header2.component';
 
+
+import { CountUpModule } from 'countup.js-angular2';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,7 +72,7 @@ import { Header2Component } from './shared/header2/header2.component';
     BrowserModule,
     AppRoutingModule,NgbModule,FormsModule,HttpClientModule,ReactiveFormsModule,  
     AngularFireModule.initializeApp(environment.firebase),AngularFireStorageModule,CKEditorModule,
-    OwlModule
+    OwlModule,CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

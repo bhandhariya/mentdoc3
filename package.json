@@ -29,6 +29,7 @@
     "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
     "counterup": "^1.0.2",
+    "countup.js-angular2": "^7.3.0",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "firebase": "^6.6.1",
