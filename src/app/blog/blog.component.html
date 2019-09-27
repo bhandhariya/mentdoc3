@@ -1,77 +1,51 @@
-<!-- <section>
-    <div class="card" id="cardHeader" >
-        <h1>HOME / BLOG</h1>
-    </div>
-    <div style="margin-top: 5px;" class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" id="blog" >
-                        <img class="card-img-top" src="../../assets/image/blog/blog_ehr.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">ELECTRONIC HEALTH RECORDS AND ITS BENEFITS</h4>
-                            
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                    <div class="card" id="blog" >
-                            <img class="card-img-top" src="../../assets/image/blog/blog_sd.jpg" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">DAILY HABITS CAUSING STRESS</h4>
-                                
-                            </div>
-                    </div>
-            </div>
-            <div class="col-md-4">
-                    <div class="card" id="blog" >
-                            <img class="card-img-top" src="../../assets/image/blog/blog_stress.jpg" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">How To Overcome Insomnia</h4>
-                                
-                            </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-<body>
-        <section>
-            <div class="container">
-                <header>
-                        <h1>Latest News</h1>
-                        <p>ffmdfmldfmmfmsdmfsdmlfmsdfsdmfmsdmfsdmfmds</p>
-                </header>
-                <main>
-                   
-    
-                    <div class="singleBlog">
-                        <img src="../../assets/image/blog/blog_ehr.jpg" alt="">
-                        <div class="blogContent">
-                            <h3>A cair of million<span>Art</span></h3>
-                            <p>By<a href="#">Jhon doe </a> |<a href="#">Nov 21,2018</a></p>
-                        <a href="#">Read More</a>
-                        </div>
-                    </div>
-    
-                    <div class="singleBlog">
-                        <img src="../../assets/image/blog/blog_sd.jpg" alt="">
-                        <div class="blogContent">
-                            <h3>A cair of million<span>Art</span></h3>
-                            <p>By<a href="#">Jhon doe </a> |<a href="#">Nov 21,2018</a></p>
-                        <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img src="../../assets/image/blog/blog_stress.jpg" alt="">
-                        <div class="blogContent">
-                            <h3>A cair of million<span>Art</span></h3>
-                            <p>By<a href="#">Jhon doe </a> |<a href="#">Nov 21,2018</a></p>
-                        <a href="#">Read More</a>
-                        </div>
-                    </div>
+<section id="blog">
+    <div class="container">
+            
+         <div class="row">
+             <div class="col-lg-6 col-lg-offset-3 text-center">  
+                 <h2>
+                     <span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span>
+                 </h2>
+             </div> 
+          </div>  
+                 
+         <div class="row">
+              
+              <div id="slider" class="carousel slide" data-ride="carousel">
+                         
+                      <ol class="carousel-indicators">
+                          <li data-target="#slider" data-slide-to="0" class="active"></li>
+                          <li data-target="#slider" data-slide-to="1"></li>
+                      </ol>
+                             
+                       
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                     
                 
-                </main>
-            </div>
-        </section>
-    </body>
+                 <div class="item">
+                     <div class="row">
+                         
+                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" *ngFor="let item of arr">
+                          <div class="card text-center">
+                             <img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+                             <div class="card-block">
+                                 <h4 class="card-title">Post Title</h4>
+                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                 <a class="btn btn-default" href="#">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       
+                      
+                         
+                     </div> <!-- row -->
+                 </div> <!-- item -->
+                  
+                  
+                 </div>
+             </div>
+         </div>
+             
+     </div>
+ </section>
