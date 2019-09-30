@@ -5,7 +5,9 @@ import { SecurityComponent } from './security/security.component';
 import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+
 import { AdminComponent } from './admin/admin.component';
+import { DownappComponent } from './downapp/downapp.component';
 
 
 const routes: Routes = [
@@ -15,6 +17,7 @@ const routes: Routes = [
   {path:'services',component:ServicesComponent},
   {path:'blog',component:BlogComponent},
   {path:'contact',component:ContactComponent},
+  {path:'download',component:DownappComponent},
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 ];
 
