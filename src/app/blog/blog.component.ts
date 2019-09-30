@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-blog',
@@ -6,20 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
-arr=[
-  {id:1},
-  {id:2},
-  {id:3},
-  {id:4},
-  {id:5},
-  {id:6},
-  {id:7},
-  {id:8},
-  {id:9},
-];
-  constructor() { }
+Blogs;
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
+    this.http.get('/api/blog/getall').subscribe(r=>{
+      this.Blogs=r;
+      console.log(r)
+    }) 
   }
 
 }

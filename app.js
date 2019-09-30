@@ -6,6 +6,7 @@ var logger = require('morgan');
 // var db=require('./db')
 var CorousalRouter = require('./routes/courousal_router');
 var testimonialRouter=require('./routes/testimonial_router')
+var blogRouter=require('./routes/blog_router');
 
 
 
@@ -33,6 +34,8 @@ app.use(function(req,res,next){
 
 app.use('/api/banner', CorousalRouter);
 app.use('/api/testimonial', testimonialRouter);
+app.use('/api/blog', blogRouter);
+
 
 
 
