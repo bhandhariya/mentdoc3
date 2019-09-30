@@ -40,6 +40,7 @@ import { Header2Component } from './shared/header2/header2.component';
 
 
 import { CountUpModule } from 'countup.js-angular2';
+import { DownappComponent } from './downapp/downapp.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { CountUpModule } from 'countup.js-angular2';
     AdminComponent,
     TestingComponent,
     FaqComponent,
-    Header2Component
+    Header2Component,
+    DownappComponent
   ],
   imports: [
     BrowserModule,
