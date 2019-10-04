@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { AdminComponent } from './admin/admin.component';
 import { DownappComponent } from './downapp/downapp.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'blog',component:BlogComponent},
   {path:'contact',component:ContactComponent},
   {path:'download',component:DownappComponent},
+  {path:'privacy',component:PrivacyComponent},
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 ];
 
